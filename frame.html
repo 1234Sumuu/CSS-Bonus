@@ -17,10 +17,16 @@
             border-radius: 10px;
             position: relative;
             margin: 10px;
+            overflow: hidden;
         }
         .photo-frame .photo img{
             width: 100%;
 
+        }
+        .photo-frame:hover .photo img{
+            transform: rotate(30deg);
+            /* transform: scale(1.2); */
+            transition: transform 2s;
         }
         .photo-detail{
            position: absolute;
@@ -31,7 +37,7 @@
         }
         .photo-frame:hover .photo-detail{
             display: block;
-            background-color: rgb(235, 209, 145);
+            /* background-color: rgba(238, 221, 178); */
         }
         .photo-frame:hover .photo-detail h3{
             color: honeydew;
